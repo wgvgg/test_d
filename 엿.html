@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MOVIE TYPE</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header style="background-color: #ff69b4; color: #fff; display: flex; justify-content: space-between; align-items: center;">
+      <h1 style="margin: 0;">MOVIE TYPE</h1>
+      <nav>
+        <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+          <li style="margin: 0 1rem;"><a href="#">영화 추천</a></li>
+          <li style="margin: 0 1rem;"><a href="#">커뮤니티</a></li>
+          <li style="margin: 0 1rem;"><a href="#">마이페이지</a></li>
+          <li style="margin: 0 1rem;"><button id="login-btn">로그인</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>영화 추천</h2>
+        <p>안녕하세요! MOVIE TYPE입니다.</p>
+        <form id="search-form">
+          <label for="search-input">영화 검색</label>
+          <input type="text" id="search-input" name="search" placeholder="영화 제목을 입력하세요">
+          <button type="submit">검색</button>
+        </form>
+        <button id="recommend-btn">영화 추천</button>
+      </section>
+      <section id="movie-posters">
+        <h2>인기 영화</h2>
+        <div class="poster-container">
+          <img src="https://picsum.photos/id/237/200/300" alt="타이타닉">
+          <p>타이타닉</p>
+        </div>
+        <div class="poster-container">
+          <img src="https://picsum.photos/id/238/200/300" alt="라라랜드">
+          <p>라라랜드</p>
+        </div>
+        <div class="poster-container">
+          <img src="https://picsum.photos/id/239/200/300" alt="영화 포스터">
+          <p>영화 제목</p>
+        </div>
+      </section>
+    </main>
+    <footer style="background-color: #ff69b4; color: #fff; display: flex; justify-content: center; align-items: center;">
+      <p>&copy; 2023 MOVIE TYPE</p>
+    </footer>
+    <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form>
+          <label for="username">아이디:</label>
+          <input type="text" id="username" name="username"><br><br>
+          <label for="password">비밀번호:</label>
+          <input type="password" id="password" name="password"><br><br>
+          <button type="submit">로그인</button>
+        </form>
+      </div>
+    </div>
+    <script src="script
